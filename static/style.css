@@ -867,4 +867,102 @@ footer .copy span img {
   max-width: 75px;
   vertical-align: middle;
 }
+
+@media only screen and (max-width: 768px) {
+  header, .slider, .head a {
+    display: none;
+  }
+  .details .head h1 {
+    font-size: 24px;
+    max-width: 100%;
+  }
+  .select .tbl-accordion {
+    border: none;
+  }
+  .select .tbl-accordion thead {
+    display: none;
+  }
+  .select .tbl-accordion tr {
+    display: block;
+  }
+  .select .tbl-accordion tr.trow td {
+    border: none;
+    display: block;
+  }
+  .select .tbl-accordion .tbl-accordion-nested .detailed {
+    top: 0;
+  }
+  .select .tbl-accordion .tbl-accordion-nested .detailed td {
+    border: none;
+    display: block;
+    width: 100%;
+  }
+  .select .tbl-accordion .tbl-accordion-nested .detailed td:last-child {
+    position: absolute;
+    top: 0;
+    right: 15px;
+    width: 25px !important;
+  }
+  .select .tbl-accordion .tbl-accordion-nested .detailed td:nth-child(5) {
+    color: #242526;
+  }
+  .select .tbl-accordion .tbl-accordion-nested .detailed td:nth-child(5) br {
+    display: none;
+  }
+  .select .tbl-accordion .tbl-accordion-nested .detailed button.btn {
+    margin-top: 42px;
+    position: relative;
+  }
+  footer {
+    padding: 45px 0 50px;
+  }
+  footer .container {
+    max-width: 558px;
+    padding: 0 30px;
+  }
+  footer .flex {
+    display: block;
+    text-align: center;
+  }
+  footer .flex .col-50 {
+    width: 100%;
+    float: left;
+    position: relative;
+  }
+  footer .flex .col-50 h1 {
+    margin-bottom: 41px;
+  }
+  footer .flex .col-50 ul {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    text-align: center;
+    bottom: -160%;
+    margin-top: 0;
+    padding: 25px 0;
+    border-bottom: 1px solid #dcdcdc;
+  }
+  footer .flex .col-50 ul li {
+    float: none;
+    display: inline;
+  }
+  footer .flex .col-50 ul li:last-child {
+    margin-right: 0;
+  }
+  footer .flex .col-25 {
+    width: 50%;
+    float: left;
+    text-align: left;
+    position: relative;
+  }
+  footer .copy {
+    padding: 125px 0 0;
+    margin-top: 0;
+    border-top: none;
+    clear: both;
+  }
+  footer .copy .member {
+    margin-top: 25px;
+  }
+}
 /*# sourceMappingURL=style.css.map */
