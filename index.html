@@ -327,13 +327,64 @@
         </div>
     </section>
 
-    <section class="location" id="location">
+    <section class="content location" id="location">
         <div class="container">
             <h3>Location</h3>
             <address>#8-3-833, Plot No. 304, 305,above Green Buwachi Restaurant, Kamalapuri Colony, Hyderabad, Telangana</address>
             <div class="map">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.8094082723705!2d78.33072051431891!3d17.42093188805854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb937dd8ea0bb3%3A0xd8c4a62218f75bc!2sSpandana+Sphoorty+Financial+Limited!5e0!3m2!1sen!2sin!4v1477547008022" frameborder="0" style="border:0" allowfullscreen></iframe>
             </div>
+        </div>
+    </section>
+
+    <section class="content description" id = "description">
+        <div class="container">
+            <article>
+                <h3>Description</h3>
+                <h6>The Space</h6>
+                <div class="text">
+                    <p class="justify-text limited">Hotel R-Inn Residency is a popular choice amongst travelers in Hyderabad, whether exploring or just passing through. Featuring a complete list of amenities, guests will find their stay at the property a comfortable one. 24-hour room service, 24-hour front desk, car park, room service, restaurant are there for guest's enjoyment. Designed for comfort, selected guestrooms offer linens, mirror, towels, air conditioning, fan to ensure a restful night. The hotel offers various recreational opportunities. Discover all Hyderabad has to offer by making Hotel R-Inn Residency your base.</p>
+                    <button onclick="expand()" class="more up">Read more&nbsp;<i class="fa fa-angle-up"></i></button>
+                    <button onclick="expand()" class="more down">Read less&nbsp;<i class="fa fa-angle-down"></i></button>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <section class="content policy" id = "policy">
+        <div class="container">
+            <article>
+                <h3>Accommodation policies</h3>
+                <div class="text">
+                    <ul>
+                        <li>
+                            <label>Checkin</label>
+                            <span>12:00 PM (noon)</span>
+                        </li>
+                        <li>
+                            <label>Checkout</label>
+                            <span>12:00 PM (noon)</span>
+                        </li>
+                        <li>
+                            <label>Cancellation</label>
+                            <span>Cancellation policy varies with the check-in dates. Please select the checkin/checkout date to see the cancellation policy for those dates.<br/>CuddlyNest service fee is non-refundable.</span>
+                        </li>
+                        <li>
+                            <label>Minimum Stay</label>
+                            <span>1 night</span>
+                        </li>
+                        <li>
+                            <label>Rules</label>
+                            <span><strong>Pet:</strong> Pets are not allowed.</span>
+                        </li>
+                        <li>
+                            <label>Important notices</label>
+                            <span>The hotel does not accept children under 18 years of age staying alone.<br/>Effective from Oct 1, 2019, an additional tax will be charged per night according to the following standard: not applicable to room rates of INR 1,000 and under; 12% for room rates from INR 1,001 to 7,499; 18% for room rates of INR 7,500 and above.</span>
+                        </li>
+                    </ul>
+                    <a class="pink report"><i class="fa fa-flag-o"></i>&nbsp;Report this hotel</a>
+                </div>
+            </article>
         </div>
     </section>
 
@@ -462,6 +513,9 @@
             })
         });
         $('thead.one').click();
+        $(".more").click(function(){
+            $(".text").toggleClass("expand");
+        });
     </script>
 </body>
 </html>

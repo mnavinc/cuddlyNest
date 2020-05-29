@@ -436,7 +436,7 @@ header{
             cursor: pointer;
           }
           .detailed{
-                top: -47px;
+                transform: translateY(-47px);
                 position: relative;
                 background:$bgcolor;
                 transition:height 0.2s ease-in-out;
@@ -544,12 +544,98 @@ header{
     }      
 }
 
-.location{
+.content{
     margin-top:45px;
     h3{
         font-weight: 500;
         font-size: 24px;
         line-height: 29px;
+    }
+    h6{
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        margin-top:20px;
+    }
+    .justify-text{
+        text-align: justify;
+    }
+    .text{
+        margin-top:20px;
+        p{
+            &.limited{
+                height: 40px;
+                overflow: hidden;
+            }
+        }
+        ul{
+            list-style:none;
+            li{
+                width:100%;
+                margin-bottom:10px;
+                font-size:$fontsize;
+                label{
+                    width:30%;
+                    display:inline-block;
+                    vertical-align: top;
+                }
+                span{
+                    display:inline-block;
+                    width:67%;
+                    vertical-align: top;
+                }
+            }
+        }
+        button{
+            &.more{
+                background:transparent;
+                border:none;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 22px;
+                color: $colortext;
+                margin-top:10px;
+                margin-bottom:42px;
+                &.up{
+                    display:block;
+                }
+                &.down{
+                    display:none;
+                }
+            }
+        }
+        a{
+            &.report{
+                font-size: 18px;
+                line-height: 22px;
+                margin:20px 0;
+                display:inline-block;
+            }
+        }
+        &.expand{
+            .limited{
+                height:auto;
+            }
+            button{
+                &:focus{
+                    outline:none;
+                }
+                &.more{
+                    &.up{
+                        display:none;
+                    }
+                    &.down{
+                        display:block;
+                    }
+                }
+            }
+        }
+
+    }
+    
+    article{
+        width:66.66667%;
+        word-break: break-word;
     }
     address{
         font-style: normal;

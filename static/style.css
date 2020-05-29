@@ -506,7 +506,8 @@ header .menu .submenu:hover ul {
 }
 
 .select .tbl-accordion .tbl-accordion-nested .detailed {
-  top: -47px;
+  -webkit-transform: translateY(-47px);
+          transform: translateY(-47px);
   position: relative;
   background: #fcfcfc;
   -webkit-transition: height 0.2s ease-in-out;
@@ -620,17 +621,106 @@ header .menu .submenu:hover ul {
   cursor: pointer;
 }
 
-.location {
+.content {
   margin-top: 45px;
 }
 
-.location h3 {
+.content h3 {
   font-weight: 500;
   font-size: 24px;
   line-height: 29px;
 }
 
-.location address {
+.content h6 {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  margin-top: 20px;
+}
+
+.content .justify-text {
+  text-align: justify;
+}
+
+.content .text {
+  margin-top: 20px;
+}
+
+.content .text p.limited {
+  height: 40px;
+  overflow: hidden;
+}
+
+.content .text ul {
+  list-style: none;
+}
+
+.content .text ul li {
+  width: 100%;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.content .text ul li label {
+  width: 30%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.content .text ul li span {
+  display: inline-block;
+  width: 67%;
+  vertical-align: top;
+}
+
+.content .text button.more {
+  background: transparent;
+  border: none;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #574b90;
+  margin-top: 10px;
+  margin-bottom: 42px;
+}
+
+.content .text button.more.up {
+  display: block;
+}
+
+.content .text button.more.down {
+  display: none;
+}
+
+.content .text a.report {
+  font-size: 18px;
+  line-height: 22px;
+  margin: 20px 0;
+  display: inline-block;
+}
+
+.content .text.expand .limited {
+  height: auto;
+}
+
+.content .text.expand button:focus {
+  outline: none;
+}
+
+.content .text.expand button.more.up {
+  display: none;
+}
+
+.content .text.expand button.more.down {
+  display: block;
+}
+
+.content article {
+  width: 66.66667%;
+  word-break: break-word;
+}
+
+.content address {
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -639,7 +729,7 @@ header .menu .submenu:hover ul {
   margin: 20px 0;
 }
 
-.location iframe {
+.content iframe {
   width: 100%;
   min-height: 640px;
   margin-bottom: 20px;
